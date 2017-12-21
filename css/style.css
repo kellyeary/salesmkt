@@ -1,0 +1,501 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 10px;
+  line-height: 1.6;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  display: grid;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+p{
+  font-size: 1.4em;
+}
+
+
+/******************************************
+/* PAGE HEADER
+/*******************************************/
+
+.wrapperHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 20px;
+}
+
+.logo img {
+  max-width: 45%;
+  padding: 15px 30px;
+}
+
+.wrapperNav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  width: 100%;
+  height: 60%;
+}
+
+.navLink a {
+  font-size: 1.7em;
+  color: rgb(50, 50, 50);
+  text-decoration: none;
+}
+
+.navLink:hover {
+  border-top: 2px solid #fdb813;
+}
+
+.navLink a.current {
+  color: #1072ba;
+  font-size: 1.7em;
+}
+
+
+/*END PAGE HEADER*/
+
+
+/******************************************
+/* HOME PAGE
+/*******************************************/
+
+.wrapperLeadIn {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  background: #1072ba;
+}
+
+.wrapperLeadIn h1 {
+  color: #fff;
+  font-size: 3.5em;
+  margin: 20px 30px 0 30px;
+}
+
+.wrapperBG {
+  background: url(../images/bg.jpg);
+  margin-bottom: 0px;
+}
+
+.wrapperTriangle {
+  display: grid;
+  overflow: auto;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.triangle {
+  margin-bottom: 20px;
+}
+
+.wrapperCycle {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.wrapperCycle img {
+  margin: 10px auto;
+  max-width: 35%;
+}
+
+.wrapperMarketingObjectives, .wrapperMarketingApproach {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 40px 40px 0 40px;
+  grid-column-gap: 40px;
+}
+
+.wrapperMarketingObjectives {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+
+.wrapperMarketingApproach .objective {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.objective {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.icons {
+  margin: 0 auto;
+  display: block;
+  max-width: 30%;
+}
+
+.objective h6 {
+  margin-top: 15px;
+  font-size: 2em;
+}
+
+.objective p {
+  margin-bottom: 100px;
+}
+
+footer {
+  background: url(../images/bootsbg.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  margin-top: 0;
+}
+
+footer .form {
+  height: 400px;
+}
+
+
+/******************************************
+/* MARKETING PROGRAMS
+/*******************************************/
+
+.wrapperPrograms {
+  padding-top: 80px;
+  background: url(../images/bg.jpg);
+}
+
+.yellowRule {
+  border-top: 4px solid #fdb813;
+  width: 200px;
+  margin: 20px auto;
+}
+
+p.programsLeadInText {
+  text-align: center;
+  font-size: 2em;
+  margin: 15px 50px;
+  ;
+}
+
+.wrapperProgramsBoxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+.programsBoxes {
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  height: 100%;
+}
+
+.programsBoxes h2 {
+  margin-top: 10px;
+  border-top: 1px solid #fdb813;
+  padding-top: 5px;
+}
+
+.programBoxImg {
+  width: 100%;
+  height: 100px;
+  background: #1072ba;
+  margin: 0 auto;
+}
+
+footer {}
+
+
+/******************************************
+  /* ABOUT US PAGE
+  /*******************************************/
+
+.wrapperAbout {
+  padding-top: 80px;
+  background: url(../images/bg.jpg);
+}
+
+.yellowRule {
+  border-top: 4px solid #fdb813;
+  width: 200px;
+  margin: 20px auto;
+}
+
+p.aboutLeadInText {
+  text-align: center;
+  font-size: 2em;
+  margin: 15px 50px;
+  ;
+}
+
+.wrapperWeHelp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  margin: 70px 40px;
+}
+
+.weHelpColumn {
+  width: 60%;
+  margin: auto;
+}
+
+.weHelpColumn h2 {
+  text-align: left;
+  color: #1072ba;
+  margin-bottom: 10px;
+}
+
+.weHelpColumn ul {
+  list-style-type: square;
+}
+
+.weHelpColumn li {
+  font-size: 1.5em;
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.wrapperAboutIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  align-items: center;
+  padding: 70px 40px;
+  background: rgba(0, 0, 0, .8);
+}
+
+.aboutIcons{
+  padding: 15px;
+}
+
+.aboutIcons p{
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.yellowText{
+  color: #fdb813;
+  font-weight: 700;
+}
+
+
+/******************************************
+/* RESPONSIVE STYLES
+/*******************************************/
+
+@media (min-width: 0px) and (max-width: 600px) {
+  /* NAV   */
+  .wrapperHeader, .wrapperNav, .navLink {
+    display: grid;
+    margin: auto;
+  }
+  .wrapperHeader {
+    grid-template-columns: 1fr;
+    margin-top: 5px;
+  }
+  .wrapperNav {
+    grid-template-columns: 1fr;
+    padding-right: 0px;
+    width: 100%;
+  }
+  .logo {
+    border-bottom: 1px solid #aaa;
+  }
+  .logo img {
+    max-width: 45%;
+    padding: 15px;
+    margin: 0 auto;
+    display: block;
+  }
+  .navLink {
+    border-top: none;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /*HOME PAGE*/
+  .wrapperLeadIn {
+    padding-top: 20px;
+  }
+  .wrapperLeadIn h1 {
+    font-size: 2.5em;
+  }
+  .wrapperCycle img {
+    margin: 10px auto;
+    max-width: 90%;
+  }
+  .wrapperMarketingObjectives, .wrapperMarketingApproach {
+    grid-template-columns: 1fr;
+  }
+  .wrapperMarketingApproach .objective {
+    width: 100%;
+  }
+  .objective p {
+    margin-bottom: 50px;
+  }
+  /*MARKETING PROGRAMS PAGE*/
+  .wrapperProgramsBoxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+    margin: 40px 20px;
+  }
+  .programsBoxes {
+    margin-bottom: 15px;
+  }
+/* ABOUT US PAGE */
+  .wrapperWeHelp, .wrapperAboutIcons {
+    grid-template-columns: 1fr;
+  }
+  .weHelpColumn {
+    width: 90%;
+    margin: 15px auto;
+  }
+
+  .aboutIcons .icons{
+    max-width: 25%;
+    margin-top: 15px;
+  }
+
+}
+
+@media (min-width: 601px) and (max-width: 1070px) {
+  /* NAV   */
+  .wrapperHeader, .wrapperNav, .navLink {
+    display: grid;
+    margin: auto;
+  }
+  .wrapperHeader {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+  .wrapperNav {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 0px;
+    width: 100%;
+    justify-content: right;
+  }
+  .logo img {
+    max-width: 25%;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+  }
+  .navLink {
+    padding: 10px 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /*HOME PAGE*/
+  .wrapperCycle img {
+    margin: 10px auto;
+    max-width: 50%;
+  }
+  .wrapperMarketingObjectives {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wrapperMarketingApproach .objective {
+    width: 100%;
+  }
+  /*MARKETING PROGRAMS PAGE*/
+  .programsBoxes h2 {
+    font-size: 1.5em;
+  }
+  /* ABOUT US PAGE */
+  .weHelpColumn {
+    width: 90%;
+    margin: auto;
+  }
+
+  .aboutIcons .icons{
+    max-width: 40%;
+  }
+}
