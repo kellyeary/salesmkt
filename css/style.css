@@ -58,7 +58,7 @@ Developer @GA in NYC
 body {
   color: #000;
   font-size: 10px;
-  line-height: 1.4;
+  line-height: 1.6;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   display: grid;
 }
@@ -70,8 +70,12 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 700;
+}
+
+p{
+  font-size: 1.4em;
 }
 
 
@@ -104,8 +108,6 @@ h2 {
   align-items: center;
   text-align: center;
   font-weight: 300;
-  /*border-top: 1px solid #aaa;*/
-  /*border-bottom: 1px solid #aaa;*/
   width: 100%;
   height: 60%;
 }
@@ -117,16 +119,12 @@ h2 {
 }
 
 .navLink:hover {
-  /*text-transform: uppercase;*/
-  /*background-color: #ccc;*/
   border-top: 2px solid #fdb813;
-  /*border-left: 2px solid #fdb813;*/
 }
 
 .navLink a.current {
   color: #1072ba;
   font-size: 1.7em;
-  /*text-transform: uppercase;*/
 }
 
 
@@ -151,48 +149,45 @@ h2 {
 
 .wrapperBG {
   background: url(../images/bg.jpg);
+  margin-bottom: 0px;
 }
 
-.wrapperTriangle{
-  display:grid;
+.wrapperTriangle {
+  display: grid;
   overflow: auto;
   grid-template-columns: 1fr;
   align-items: center;
 }
 
-.triangle{
-  margin-bottom: 0px;
+.triangle {
+  margin-bottom: 20px;
 }
 
-.wrapperCycle{
+.wrapperCycle {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
 }
 
-
-.wrapperCycle img{
+.wrapperCycle img {
   margin: 10px auto;
   max-width: 35%;
 }
 
-.wrapperMarketingObjectives{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  margin: 30px 30px;
-  grid-column-gap: 30px;
-}
-
-.wrapperMarketingApproach{
+.wrapperMarketingObjectives, .wrapperMarketingApproach {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: 30px 30px;
-  grid-column-gap: 30px;
+  margin: 40px 40px 0 40px;
+  grid-column-gap: 40px;
 }
 
-.wrapperMarketingApproach .objective{
+.wrapperMarketingObjectives {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+
+.wrapperMarketingApproach .objective {
   width: 50%;
   margin: 0 auto;
 }
@@ -205,38 +200,57 @@ h2 {
   padding: 15px;
 }
 
-.icons{
+.icons {
   margin: 0 auto;
+  display: block;
   max-width: 30%;
 }
 
-.objective h6{
+.objective h6 {
   margin-top: 15px;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
-.objective p{
-  font-size: 1.4em;
+.objective p {
+  margin-bottom: 100px;
 }
+
+footer {
+  background: url(../images/bootsbg.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  margin-top: 0;
+}
+
+footer .form {
+  height: 400px;
+}
+
 
 /******************************************
 /* MARKETING PROGRAMS
 /*******************************************/
+
 .wrapperPrograms {
   padding-top: 80px;
   background: url(../images/bg.jpg);
 }
+
 .yellowRule {
   border-top: 4px solid #fdb813;
   width: 200px;
   margin: 20px auto;
 }
+
 p.programsLeadInText {
   text-align: center;
-  font-size: 1.6em;
-  margin: 10px 15px;
+  font-size: 2em;
+  margin: 15px 50px;
   ;
 }
+
 .wrapperProgramsBoxes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -244,60 +258,136 @@ p.programsLeadInText {
   align-items: center;
   margin: 40px 20px;
 }
+
 .programsBoxes {
   border: 1px solid #000;
   border-radius: 6px;
   padding: 15px;
   background: rgba(255, 255, 255, 0.9);
-  height: 200px;
+  height: 100%;
 }
+
 .programsBoxes h2 {
   margin-top: 10px;
   border-top: 1px solid #fdb813;
   padding-top: 5px;
 }
+
 .programBoxImg {
   width: 100%;
   height: 100px;
   background: #1072ba;
   margin: 0 auto;
 }
+
 footer {}
+
+
+/******************************************
+  /* ABOUT US PAGE
+  /*******************************************/
+
+.wrapperAbout {
+  padding-top: 80px;
+  background: url(../images/bg.jpg);
+}
+
+.yellowRule {
+  border-top: 4px solid #fdb813;
+  width: 200px;
+  margin: 20px auto;
+}
+
+p.aboutLeadInText {
+  text-align: center;
+  font-size: 2em;
+  margin: 15px 50px;
+  ;
+}
+
+.wrapperWeHelp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  margin: 70px 40px;
+}
+
+.weHelpColumn {
+  width: 60%;
+  margin: auto;
+}
+
+.weHelpColumn h2 {
+  text-align: left;
+  color: #1072ba;
+  margin-bottom: 10px;
+}
+
+.weHelpColumn ul {
+  list-style-type: square;
+}
+
+.weHelpColumn li {
+  font-size: 1.5em;
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.wrapperAboutIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  align-items: center;
+  padding: 70px 40px;
+  background: rgba(0, 0, 0, .8);
+}
+
+.aboutIcons{
+  padding: 15px;
+}
+
+.aboutIcons p{
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.yellowText{
+  color: #fdb813;
+  font-weight: 700;
+}
+
 
 /******************************************
 /* RESPONSIVE STYLES
 /*******************************************/
-@media (min-width: 0px) and (max-width: 600px) {
 
-/* NAV   */
+@media (min-width: 0px) and (max-width: 600px) {
+  /* NAV   */
   .wrapperHeader, .wrapperNav, .navLink {
     display: grid;
     margin: auto;
   }
-
   .wrapperHeader {
     grid-template-columns: 1fr;
     margin-top: 5px;
   }
-
   .wrapperNav {
     grid-template-columns: 1fr;
     padding-right: 0px;
     width: 100%;
   }
-
   .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-bottom: 1px solid #aaa;
   }
-
   .logo img {
     max-width: 45%;
     padding: 15px;
+    margin: 0 auto;
+    display: block;
   }
-
   .navLink {
     border-top: none;
     padding: 5px;
@@ -307,28 +397,27 @@ footer {}
     align-items: center;
     text-align: center;
   }
-
-/*HOME PAGE*/
-
+  /*HOME PAGE*/
   .wrapperLeadIn {
     padding-top: 20px;
   }
-
   .wrapperLeadIn h1 {
     font-size: 2.5em;
   }
-
-  .wrapperCycle img{
+  .wrapperCycle img {
     margin: 10px auto;
     max-width: 90%;
   }
-
-  .wrapperMarketingObjectives, .wrapperMarketingApproach{
+  .wrapperMarketingObjectives, .wrapperMarketingApproach {
     grid-template-columns: 1fr;
   }
-
-/*MARKETING PROGRAMS PAGE*/
-
+  .wrapperMarketingApproach .objective {
+    width: 100%;
+  }
+  .objective p {
+    margin-bottom: 50px;
+  }
+  /*MARKETING PROGRAMS PAGE*/
   .wrapperProgramsBoxes {
     display: grid;
     grid-template-columns: 1fr;
@@ -336,42 +425,47 @@ footer {}
     align-items: center;
     margin: 40px 20px;
   }
-
   .programsBoxes {
     margin-bottom: 15px;
   }
-}
-@media (min-width: 601px) and (max-width: 1070px) {
+/* ABOUT US PAGE */
+  .wrapperWeHelp, .wrapperAboutIcons {
+    grid-template-columns: 1fr;
+  }
+  .weHelpColumn {
+    width: 90%;
+    margin: 15px auto;
+  }
 
-/* NAV   */
+  .aboutIcons .icons{
+    max-width: 25%;
+    margin-top: 15px;
+  }
+
+}
+
+@media (min-width: 601px) and (max-width: 1070px) {
+  /* NAV   */
   .wrapperHeader, .wrapperNav, .navLink {
     display: grid;
     margin: auto;
   }
-
   .wrapperHeader {
     grid-template-columns: 1fr;
     margin-top: 10px;
   }
-
   .wrapperNav {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-right: 0px;
     width: 100%;
     justify-content: right;
   }
-
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .logo img {
     max-width: 25%;
     padding: 15px;
+    display: block;
+    margin: 0 auto;
   }
-
   .navLink {
     padding: 10px 10px;
     height: 100%;
@@ -380,23 +474,28 @@ footer {}
     align-items: center;
     text-align: center;
   }
-
   /*HOME PAGE*/
-  .wrapperCycle img{
+  .wrapperCycle img {
     margin: 10px auto;
     max-width: 50%;
   }
-
-  .wrapperMarketingObjectives{
+  .wrapperMarketingObjectives {
     grid-template-columns: 1fr 1fr;
   }
-
-  .wrapperMarketingApproach .objective{
+  .wrapperMarketingApproach .objective {
     width: 100%;
   }
-
   /*MARKETING PROGRAMS PAGE*/
-  h2 {
+  .programsBoxes h2 {
     font-size: 1.5em;
+  }
+  /* ABOUT US PAGE */
+  .weHelpColumn {
+    width: 90%;
+    margin: auto;
+  }
+
+  .aboutIcons .icons{
+    max-width: 40%;
   }
 }
