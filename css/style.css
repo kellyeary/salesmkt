@@ -74,13 +74,17 @@ h2 {
   font-weight: 700;
 }
 
+h6{
+    font-size: 2em;
+}
+
 p{
   font-size: 1.4em;
 }
 
 
 /******************************************
-/* PAGE HEADER
+/* GLOBAL
 /*******************************************/
 
 .wrapperHeader {
@@ -127,8 +131,21 @@ p{
   font-size: 1.7em;
 }
 
+footer {
+  background: url(../images/bootsbg.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  margin-top: 0;
+}
 
-/*END PAGE HEADER*/
+footer .form {
+  height: 400px;
+}
+
+
+/*END GLOBAL*/
 
 
 /******************************************
@@ -136,7 +153,7 @@ p{
 /*******************************************/
 
 .wrapperLeadIn {
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 5px;
   background: #1072ba;
 }
@@ -144,6 +161,7 @@ p{
 .wrapperLeadIn h1 {
   color: #fff;
   font-size: 3.5em;
+  padding-bottom: 10px;
   margin: 20px 30px 0 30px;
 }
 
@@ -208,24 +226,10 @@ p{
 
 .objective h6 {
   margin-top: 15px;
-  font-size: 2em;
 }
 
 .objective p {
   margin-bottom: 100px;
-}
-
-footer {
-  background: url(../images/bootsbg.jpg);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  align-items: center;
-  margin-top: 0;
-}
-
-footer .form {
-  height: 400px;
 }
 
 
@@ -359,6 +363,42 @@ p.aboutLeadInText {
   font-weight: 700;
 }
 
+.wrapperOurTeam h2{
+  margin-top: 70px;
+  font-size: 3.5em;
+  font-weight: 400;
+}
+
+.team{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 50px;
+}
+
+.teamMember{
+  margin-top: 30px;
+  height: 250px;
+}
+
+.imagePlaceholder{
+  width: 150px;
+  height: 150px;
+  background: rgb(161, 193, 210);
+  display: block;
+  margin: 0 auto;
+}
+
+.teamMember h6{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.teamMember p{
+  text-align: center;
+}
+
 
 /******************************************
 /* RESPONSIVE STYLES
@@ -441,6 +481,10 @@ p.aboutLeadInText {
     max-width: 25%;
     margin-top: 15px;
   }
+  .team{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
 }
 
@@ -497,5 +541,10 @@ p.aboutLeadInText {
 
   .aboutIcons .icons{
     max-width: 40%;
+  }
+
+  .team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
