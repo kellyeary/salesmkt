@@ -376,14 +376,12 @@ p.aboutLeadInText {
 }
 
 .teamMember{
-  margin-top: 30px;
+  margin: 40px 0;
   height: 250px;
 }
 
-.imagePlaceholder{
-  width: 150px;
-  height: 150px;
-  background: rgb(161, 193, 210);
+.headShot{
+  max-width: 150px;
   display: block;
   margin: 0 auto;
 }
