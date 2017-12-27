@@ -73,11 +73,17 @@ h2 {
   font-size: 2.2em;
 }
 
-h6{
-    font-size: 2em;
+h3 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 60px 0 30px 0;
 }
 
-p{
+h6 {
+  font-size: 2em;
+}
+
+p {
   font-size: 1.4em;
 }
 
@@ -128,6 +134,18 @@ p{
 .navLink a.current {
   color: #1072ba;
   font-size: 1.7em;
+}
+
+.yellowRule {
+  border-top: 4px solid #fdb813;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.yellowRuleShort {
+  border-top: 4px solid #fdb813;
+  width: 50px;
+  margin: 10px auto;
 }
 
 footer {
@@ -241,12 +259,6 @@ footer .form {
   background: url(../images/bg.jpg);
 }
 
-.yellowRule {
-  border-top: 4px solid #fdb813;
-  width: 200px;
-  margin: 20px auto;
-}
-
 p.programsLeadInText {
   text-align: center;
   font-size: 2em;
@@ -259,7 +271,7 @@ p.programsLeadInText {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 30px;
   align-items: center;
-  margin: 40px 20px;
+  margin: 40px 20px 100px 20px;
 }
 
 .programsBoxes {
@@ -281,24 +293,77 @@ p.programsLeadInText {
   margin: 0 auto;
 }
 
-.extend{
+.extend {
   background: url(../images/extend.jpg) center no-repeat;
 }
 
-.market{
+.market {
   background: url(../images/market.jpg) center no-repeat;
 }
 
-.distribute{
+.distribute {
   background: url(../images/distribute.jpg) center no-repeat;
 }
 
-.repurpose{
-  background: url(../images/repurpose.jpg) no-repeat;
+.repurpose {
+  background: url(../images/repurpose.jpg) top right no-repeat;
 }
 
-.launch{
+.launch {
   background: url(../images/launch.jpg) center no-repeat;
+}
+
+
+/******************************************
+/* AUDIENCE PAGE
+/*******************************************/
+
+.audienceLeadIn {
+  padding-top: 80px;
+}
+
+.wrapperMap {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.wrapperMap img {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.wrapperIndustries{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.industry{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.industry h6{
+  margin-top: 15px;
+}
+
+.wrapperRoles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.role{
+  text-align: center;
+}
+
+.percent{
+  font-size: 3em;
+  color:#1072ba;
+  font-weight: 700;
 }
 
 
@@ -361,11 +426,11 @@ p.aboutLeadInText {
   background: rgba(0, 0, 0, .8);
 }
 
-.aboutIcons{
+.aboutIcons {
   padding: 15px;
 }
 
-.aboutIcons p{
+.aboutIcons p {
   text-align: center;
   color: #fff;
   font-size: 1.5em;
@@ -373,42 +438,42 @@ p.aboutLeadInText {
   margin-top: 15px;
 }
 
-.yellowText{
+.yellowText {
   color: #fdb813;
   font-weight: 700;
 }
 
-.wrapperOurTeam h2{
+.wrapperOurTeam h2 {
   margin-top: 70px;
   font-size: 3.5em;
   font-weight: 400;
 }
 
-.team{
+.team {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: 50px;
 }
 
-.teamMember{
+.teamMember {
   margin: 40px 0;
   height: 250px;
 }
 
-.headShot{
+.headShot {
   max-width: 150px;
   display: block;
   margin: 0 auto;
 }
 
-.teamMember h6{
+.teamMember h6 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 10px;
 }
 
-.teamMember p{
+.teamMember p {
   text-align: center;
 }
 
@@ -436,7 +501,7 @@ p.aboutLeadInText {
     border-bottom: 1px solid #aaa;
   }
   .logo img {
-    max-width: 45%;
+    max-width: 60%;
     padding: 15px;
     margin: 0 auto;
     display: block;
@@ -482,8 +547,16 @@ p.aboutLeadInText {
   .programsBoxes {
     margin-bottom: 15px;
   }
+  /* AUDIENCE PAGE */
+  .wrapperMap img {
+    max-width: 100%;
+  }
 
-/* ABOUT US PAGE */
+  .wrapperIndustries, .wrapperRoles{
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  /* ABOUT US PAGE */
   .wrapperWeHelp, .wrapperAboutIcons {
     grid-template-columns: 1fr;
   }
@@ -491,16 +564,14 @@ p.aboutLeadInText {
     width: 90%;
     margin: 15px auto;
   }
-
-  .aboutIcons .icons{
+  .aboutIcons .icons {
     max-width: 25%;
     margin-top: 15px;
   }
-  .team{
+  .team {
     display: grid;
     grid-template-columns: 1fr;
   }
-
 }
 
 @media (min-width: 601px) and (max-width: 1070px) {
@@ -548,17 +619,19 @@ p.aboutLeadInText {
   .programsBoxes h2 {
     font-size: 1.5em;
   }
+  /* AUDIENCE PAGE */
+  .wrapperMap img {
+    max-width: 90%;
+  }
   /* ABOUT US PAGE */
   .weHelpColumn {
     width: 90%;
     margin: auto;
   }
-
-  .aboutIcons .icons{
+  .aboutIcons .icons {
     max-width: 40%;
   }
-
-  .team{
+  .team {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
