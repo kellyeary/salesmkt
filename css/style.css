@@ -79,6 +79,12 @@ h3 {
   margin: 60px 0 30px 0;
 }
 
+h4{
+  font-size: 3em;
+  color: #1072ba;
+  font-weight: 700;
+}
+
 h5 {
   font-size: 2em;
 }
@@ -168,6 +174,10 @@ a {
   padding-top: 200px;
 }
 
+.secondLeadIn {
+  padding-top: 50px;
+}
+
 footer {
   background: url(../images/bootsbg.jpg);
   display: grid;
@@ -225,7 +235,21 @@ footer .form {
   max-width: 35%;
 }
 
-.wrapperMarketingObjectives, .wrapperMarketingApproach {
+.getStarted{
+  padding: 80px 100px;
+}
+
+
+/******************************************
+/* MARKETING SOLUTIONS
+/*******************************************/
+
+.secondLeadIn h2{
+  text-align: center;
+  font-size: 4.5em;
+}
+
+.wrapperMarketingObjectives {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -236,11 +260,6 @@ footer .form {
 .wrapperMarketingObjectives {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 50px;
-}
-
-.wrapperMarketingApproach .objective {
-  width: 50%;
-  margin: 0 auto;
 }
 
 .objective {
@@ -257,46 +276,14 @@ footer .form {
   max-width: 30%;
 }
 
-.objective h6 {
+.objective h6, .solution h6 {
   margin-top: 15px;
-}
-
-.objective p {
-  margin-bottom: 100px;
-}
-
-
-/******************************************
-/* MARKETING SOLUTIONS
-/*******************************************/
-
-.wrapperTopIcons {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  margin: 50px;
-  grid-column-gap: 50px;
+  font-weight: 700;
 }
 
 .wrapperTopIcons>div {
   border: 1px solid #000;
   padding: 10px;
-}
-
-.wrapperObjectiveIcons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-}
-
-.wrapperApproachIcons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-.topIcons{
-  max-width: 25%;
 }
 
 .wrapperSolutions {
@@ -315,26 +302,20 @@ footer .form {
   height: 100%;
 }
 
-.solutionName {
-  font-size: 3em;
+.solutionSubHead {
+  font-size: 2em;
+  margin-top: -6px;
   color: #1072ba;
   font-weight: 700;
 }
 
-.solutionName span {
-  font-size: .7em;
-}
-
-.wrapperObjectiveApproach {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 10px 0;
-}
-
 .solutionsIcon {
   width: 40px;
-  margin: 5px;
+  margin: 10px 5px 0 5px;
+}
+
+.solution p{
+  padding-top: 10px;
 }
 
 
@@ -380,10 +361,6 @@ p.programsLeadInText {
   margin: 0 auto;
 }
 
-.extend {
-  background: url(../images/extend.jpg) center no-repeat;
-}
-
 .market {
   background: url(../images/market.jpg) center no-repeat;
 }
@@ -393,11 +370,15 @@ p.programsLeadInText {
 }
 
 .repurpose {
-  background: url(../images/repurpose.jpg) top right no-repeat;
+  background: url(../images/repurpose2.jpg) top right no-repeat;
 }
 
 .launch {
-  background: url(../images/launch.jpg) center no-repeat;
+  background: url(../images/launch2.jpg) center no-repeat;
+}
+
+.extend {
+  background: url(../images/extend2.jpg) top no-repeat;
 }
 
 
@@ -618,6 +599,9 @@ p.aboutLeadInText {
   }
   .objective p {
     margin-bottom: 50px;
+  }
+  .getStarted{
+    padding: 80px 20px;
   }
   /*MARKETING SOLUTIONS PAGE*/
   .wrapperTopIcons {
