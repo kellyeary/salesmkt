@@ -79,12 +79,20 @@ h3 {
   margin: 60px 0 30px 0;
 }
 
-h6 {
+h5 {
   font-size: 2em;
+}
+
+h6 {
+  font-size: 1.6em;
 }
 
 p {
   font-size: 1.4em;
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -95,7 +103,10 @@ p {
 .wrapperHeader {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-top: 20px;
+  padding-top: 20px;
+  width: 100%;
+  position: fixed;
+  background: #fff;
 }
 
 .logo img {
@@ -148,6 +159,15 @@ p {
   margin: 10px auto;
 }
 
+.wrapperBG {
+  background: url(../images/bg.jpg);
+  margin-bottom: 0px;
+}
+
+.leadIn {
+  padding-top: 200px;
+}
+
 footer {
   background: url(../images/bootsbg.jpg);
   display: grid;
@@ -170,7 +190,8 @@ footer .form {
 /*******************************************/
 
 .wrapperLeadIn {
-  padding-top: 45px;
+  margin-top: 100px;
+  padding-top: 60px;
   padding-bottom: 5px;
   background: #1072ba;
 }
@@ -180,11 +201,6 @@ footer .form {
   font-size: 3.5em;
   padding-bottom: 10px;
   margin: 20px 30px 0 30px;
-}
-
-.wrapperBG {
-  background: url(../images/bg.jpg);
-  margin-bottom: 0px;
 }
 
 .wrapperTriangle {
@@ -251,13 +267,80 @@ footer .form {
 
 
 /******************************************
-/* MARKETING PROGRAMS
+/* MARKETING SOLUTIONS
 /*******************************************/
 
-.wrapperPrograms {
-  padding-top: 80px;
-  background: url(../images/bg.jpg);
+.wrapperTopIcons {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: 50px;
+  grid-column-gap: 50px;
 }
+
+.wrapperTopIcons>div {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.wrapperObjectiveIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.wrapperApproachIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.topIcons{
+  max-width: 25%;
+}
+
+.wrapperSolutions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin: 80px 50px 50px 50px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+.solution {
+  text-align: center;
+  background: rgba(102, 102, 102, 0.1);
+  padding: 20px;
+  height: 100%;
+}
+
+.solutionName {
+  font-size: 3em;
+  color: #1072ba;
+  font-weight: 700;
+}
+
+.solutionName span {
+  font-size: .7em;
+}
+
+.wrapperObjectiveApproach {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.solutionsIcon {
+  width: 40px;
+  margin: 5px;
+}
+
+
+/******************************************
+/* MARKETING PROGRAMS
+/*******************************************/
 
 p.programsLeadInText {
   text-align: center;
@@ -276,7 +359,11 @@ p.programsLeadInText {
 
 .programsBoxes {
   height: 100%;
-  background: #333;
+  background: #222;
+}
+
+.programsBoxes:hover {
+  height: 110%;
 }
 
 .programsBoxes h2 {
@@ -318,10 +405,6 @@ p.programsLeadInText {
 /* AUDIENCE PAGE
 /*******************************************/
 
-.audienceLeadIn {
-  padding-top: 80px;
-}
-
 .wrapperMap {
   display: grid;
   grid-template-columns: 1fr;
@@ -333,36 +416,36 @@ p.programsLeadInText {
   max-width: 70%;
 }
 
-.wrapperIndustries{
+.wrapperIndustries {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   margin-bottom: 150px;
 }
 
-.industry{
+.industry {
   margin-top: 10px;
   text-align: center;
 }
 
-.industry h6{
+.industry h6 {
   margin-top: 15px;
 }
 
-.wrapperRoles{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    margin-bottom: 150px;
+.wrapperRoles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 150px;
 }
 
-.role{
+.role {
   text-align: center;
 }
 
-.percent{
+.percent {
   font-size: 3em;
-  color:#1072ba;
+  color: #1072ba;
   font-weight: 700;
 }
 
@@ -370,11 +453,6 @@ p.programsLeadInText {
 /******************************************
   /* ABOUT US PAGE
   /*******************************************/
-
-.wrapperAbout {
-  padding-top: 80px;
-  background: url(../images/bg.jpg);
-}
 
 .yellowRule {
   border-top: 4px solid #fdb813;
@@ -453,11 +531,13 @@ p.aboutLeadInText {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-bottom: 50px;
+  grid-column-gap: 20px;
 }
 
 .teamMember {
   margin: 40px 0;
   height: 250px;
+  padding: 0 20px;
 }
 
 .headShot {
@@ -475,6 +555,7 @@ p.aboutLeadInText {
 
 .teamMember p {
   text-align: center;
+  font-style: italic;
 }
 
 
@@ -483,14 +564,14 @@ p.aboutLeadInText {
 /*******************************************/
 
 @media (min-width: 0px) and (max-width: 600px) {
-  /* NAV   */
+  /* GLOBAL   */
   .wrapperHeader, .wrapperNav, .navLink {
     display: grid;
     margin: auto;
   }
   .wrapperHeader {
     grid-template-columns: 1fr;
-    margin-top: 5px;
+    padding-top: 5px;
   }
   .wrapperNav {
     grid-template-columns: 1fr;
@@ -515,9 +596,12 @@ p.aboutLeadInText {
     align-items: center;
     text-align: center;
   }
+  .leadIn {
+    padding-top: 300px;
+  }
   /*HOME PAGE*/
   .wrapperLeadIn {
-    padding-top: 20px;
+    padding-top: 200px;
   }
   .wrapperLeadIn h1 {
     font-size: 2.5em;
@@ -535,6 +619,21 @@ p.aboutLeadInText {
   .objective p {
     margin-bottom: 50px;
   }
+  /*MARKETING SOLUTIONS PAGE*/
+  .wrapperTopIcons {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+  .wrapperObjectiveIcons {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .topIcons{
+    max-width: 40%;
+  }
+  .wrapperSolutions {
+    grid-template-columns: 1fr;
+  }
   /*MARKETING PROGRAMS PAGE*/
   .wrapperProgramsBoxes {
     display: grid;
@@ -551,12 +650,14 @@ p.aboutLeadInText {
   .wrapperMap img {
     max-width: 100%;
   }
-
-  .wrapperIndustries, .wrapperRoles{
+  .wrapperIndustries, .wrapperRoles {
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
   }
   /* ABOUT US PAGE */
+  .wrapperAbout {
+    padding-top: 300px;
+  }
   .wrapperWeHelp, .wrapperAboutIcons {
     grid-template-columns: 1fr;
   }
@@ -575,14 +676,14 @@ p.aboutLeadInText {
 }
 
 @media (min-width: 601px) and (max-width: 1070px) {
-  /* NAV   */
+  /* GLOBAL  */
   .wrapperHeader, .wrapperNav, .navLink {
     display: grid;
     margin: auto;
   }
   .wrapperHeader {
     grid-template-columns: 1fr;
-    margin-top: 10px;
+    padding-top: 10px;
   }
   .wrapperNav {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -605,6 +706,9 @@ p.aboutLeadInText {
     text-align: center;
   }
   /*HOME PAGE*/
+  .wrapperLeadIn {
+    padding-top: 120px;
+  }
   .wrapperCycle img {
     margin: 10px auto;
     max-width: 50%;
@@ -614,6 +718,20 @@ p.aboutLeadInText {
   }
   .wrapperMarketingApproach .objective {
     width: 100%;
+  }
+  /*MARKETING SOLUTIONS PAGE*/
+  .wrapperTopIcons {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+  .wrapperObjectiveIcons {
+    grid-template-columns: 1fr 1fr;
+  }
+  .topIcons{
+    max-width: 20%;
+  }
+  .wrapperSolutions {
+    grid-template-columns: 1fr;
   }
   /*MARKETING PROGRAMS PAGE*/
   .programsBoxes h2 {
