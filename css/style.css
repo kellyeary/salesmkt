@@ -79,7 +79,7 @@ h3 {
   margin: 60px 0 30px 0;
 }
 
-h4{
+h4 {
   font-size: 3em;
   color: #1072ba;
   font-weight: 700;
@@ -184,16 +184,32 @@ a {
 }
 
 footer {
-  background: url(../images/bootsbg.jpg);
+  background: url(../images/darkbg.jpg);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
   align-items: center;
   margin-top: 0;
+  height: 100%;
 }
 
-footer .form {
-  height: 400px;
+footer div {
+  margin: 50px;
+}
+
+.noForm{
+  margin: 0;
+}
+
+footer img {
+  max-width: 30%;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+footer p {
+  color: #fff;
+  margin-top: 10px;
 }
 
 
@@ -240,7 +256,7 @@ footer .form {
   max-width: 35%;
 }
 
-.getStarted{
+.getStarted {
   padding: 80px 100px;
 }
 
@@ -249,7 +265,7 @@ footer .form {
 /* MARKETING SOLUTIONS
 /*******************************************/
 
-.secondLeadIn h2{
+.secondLeadIn h2 {
   text-align: center;
   font-size: 4.5em;
 }
@@ -319,7 +335,7 @@ footer .form {
   margin: 10px 5px 0 5px;
 }
 
-.solution p{
+.solution p {
   padding-top: 10px;
 }
 
@@ -353,8 +369,6 @@ p.programsLeadInText {
 }
 
 .programsBoxes h2 {
-  /* margin-top: 10px; */
-  /* border-top: 1px solid #fdb813; */
   padding-top: 5px;
   color: #fff;
   padding: 10px 15px;
@@ -544,11 +558,12 @@ p.aboutLeadInText {
   font-style: italic;
 }
 
+
 /******************************************
 /* EVENT CALENDAR
 /*******************************************/
 
-.region{
+.region {
   margin: 40px 70px;
   border-bottom: 1px solid #000;
   padding: 5px;
@@ -563,20 +578,20 @@ p.aboutLeadInText {
   grid-row-gap: 15px;
 }
 
-.regionImage{
+.regionImage {
   max-width: 95%;
 }
 
-.calendarCol{
+.calendarCol {
   display: grid;
   grid-row-gap: 15px;
 }
 
-.calendar a{
+.calendar a {
   font-size: 1.4em;
 }
 
-.footnote{
+.footnote {
   margin: 40px 70px;
 }
 
@@ -621,6 +636,13 @@ p.aboutLeadInText {
   .leadIn {
     padding-top: 300px;
   }
+  footer {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  footer img{
+    max-width: 60%;
+  }
   /*HOME PAGE*/
   .wrapperLeadIn {
     padding-top: 200px;
@@ -641,7 +663,7 @@ p.aboutLeadInText {
   .objective p {
     margin-bottom: 50px;
   }
-  .getStarted{
+  .getStarted {
     padding: 80px 20px;
   }
   /*MARKETING SOLUTIONS PAGE*/
@@ -652,8 +674,7 @@ p.aboutLeadInText {
   .wrapperObjectiveIcons {
     grid-template-columns: 1fr 1fr;
   }
-
-  .topIcons{
+  .topIcons {
     max-width: 40%;
   }
   .wrapperSolutions {
@@ -698,26 +719,22 @@ p.aboutLeadInText {
     display: grid;
     grid-template-columns: 1fr;
   }
-
-/* EVENT CALENDAR */
-
-.region{
-  margin: 40px;
-}
-.calendar {
-  grid-template-columns: 1fr;
-  margin: 0px 40px;
-  padding-bottom: 0px;
-}
-
-.regionImage{
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-
-.footnote{
-  margin: 40px;
-}
+  /* EVENT CALENDAR */
+  .region {
+    margin: 40px;
+  }
+  .calendar {
+    grid-template-columns: 1fr;
+    margin: 0px 40px;
+    padding-bottom: 0px;
+  }
+  .regionImage {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .footnote {
+    margin: 40px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 1070px) {
@@ -750,6 +767,10 @@ p.aboutLeadInText {
     align-items: center;
     text-align: center;
   }
+  footer {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
   /*HOME PAGE*/
   .wrapperLeadIn {
     padding-top: 120px;
@@ -772,7 +793,7 @@ p.aboutLeadInText {
   .wrapperObjectiveIcons {
     grid-template-columns: 1fr 1fr;
   }
-  .topIcons{
+  .topIcons {
     max-width: 20%;
   }
   .wrapperSolutions {
