@@ -183,6 +183,29 @@ a {
   padding-bottom: 100px;
 }
 
+.wrapperTestimonial{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 40px 50px 100px 50px;
+}
+
+.wrapperTestimonial p{
+  font-style: italic;
+  font-size: 1.6em;
+  /* border-top: 2px solid #fdb813;
+  padding-top: 10px; */
+}
+
+.wrapperTestimonial img{
+  max-width: 80%;
+}
+
+.wrapperTestimonial h5{
+  border-bottom: 2px solid #fdb813;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
 footer {
   background: url(../images/darkbg.jpg);
   display: grid;
@@ -418,7 +441,7 @@ p.programsLeadInText {
 
 .wrapperIndustries {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   margin-bottom: 150px;
 }
@@ -719,6 +742,13 @@ p.aboutLeadInText {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .wrapperTestimonial{
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+  .wrapperTestimonial img{
+    max-width: 50%;
+  }
   /* EVENT CALENDAR */
   .region {
     margin: 40px;
@@ -806,6 +836,10 @@ p.aboutLeadInText {
   /* AUDIENCE PAGE */
   .wrapperMap img {
     max-width: 90%;
+  }
+  .wrapperIndustries {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
   }
   /* ABOUT US PAGE */
   .weHelpColumn {
