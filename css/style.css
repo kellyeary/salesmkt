@@ -102,6 +102,11 @@ a {
   color: rgb(23, 91, 181);
 }
 
+sup{
+  font-size: .5em;
+  vertical-align: super;
+}
+
 
 /******************************************
 /* GLOBAL
